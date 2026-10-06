@@ -19,3 +19,6 @@ const pool = new Pool({
     password: 'admin123', // sesuaikan password masing-masing
     port: 5432,
 })
+
+app.get('/', (req, res, next) => {
+    console.log("TEST DATA : ");
